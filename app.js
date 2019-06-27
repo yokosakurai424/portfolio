@@ -1,3 +1,4 @@
+// loading
 // Loading Page
 $(function() {
 
@@ -8,8 +9,8 @@ $(function() {
     function imagesProgress () {
 
         var $container = $('#progress'), //1
-        var $progressBar = $container.find('.progress-bar'), //2
-        var $progressText = $container.find('.progress-text'), //3
+        $progressBar = $container.find('.progress-bar'), //2
+        $progressText = $container.find('.progress-text'), //3
         // 1.プログレス表示全体のコンテナー
         // 2. プログレス表示のバー部分
         // 3. プログレス表示のテキスト部分
@@ -17,7 +18,7 @@ $(function() {
         // imagesLoaded ライブラリでbody要素内の画像の読み込み状況を監視
         // 同時にbody全体の画像の総数を保存
         imgLoad = imagesLoaded('body'),
-        imgTotatl = imgLoad.images.length,
+        imgTotal = imgLoad.images.length,
 
         // 読み込みの完了した画像の数のカウンターと、
         // プログレス表示の現在地にあたる数値（ともに最初は0)
@@ -56,7 +57,7 @@ $(function() {
                 .animate({ opacity: 0}, 250, function() {
                     $container.animate({
                         top: '-100%'
-                    }, 1000, 'easeInOutQuint');
+                    }, 1000);
                 });
             }
 
@@ -67,3 +68,15 @@ $(function() {
         }
     }
 });
+
+
+$(function() {
+    $('.toggle').click(function() {
+      $(this).toggleClass("active");
+          if($(this).hasClass('active')) {
+              $('.global_nav').addClass('active');
+          } else {
+              $('.global_nav').removeClass('active');
+          }
+    });
+  });

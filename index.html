@@ -10,12 +10,11 @@
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
 </head>
 <body>
-    <!-- Loading Pages -->
-    <!-- <div class="progress" id="progress">
-        <span class="progress-bar"></span>
-        <span class="progress-text">0%</span>
-    </div> -->
-
+    <!-- loading -->
+        <div class="progress" id="progress">
+                <span class="progress-bar"></span>
+                <span class="progress-text">0%</span>
+            </div>
     <!-- Header -->
     <header class="navbar-fixed-top bg-nav">
     <nav>
@@ -29,6 +28,23 @@
     </nav>
     </header>
 
+    <!-- SP -->
+    <div class="toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <nav class="global_nav">
+        <ul>
+          <li class="nav_li"><a href="#home">Home</a></li>
+          <li class="nav_li"><a href="#about">About</a></li>
+          <li class="nav_li"><a href="#skills">Skills</a></li>
+          <li class="nav_li"><a href="#project">Project</a></li>
+          <li class="nav_li"><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
     <!-- Home -->
     <main>
     <div class="section" id="home">
@@ -40,14 +56,14 @@
 
     <!-- About -->
     <div class="section" id="about">
-        <div class="profile">
-         <h1>About Me</h1>
-         <p>桜井羊子<br>1994年4月24日生まれ <br> アメリカ生まれ日本育ち<br>2013年から5年間アメリカで過ごす<br>日本に帰国後何か新しい事を学びたい<br>と思いNex Seed沖縄校で<br>３ヶ月間Programmingを学ぶ<br>趣味は海外旅行とカフェ巡り</p>
-        </div>
-        <div class="aboutimage">
-         <div class="border"></div>
-         <img src="/img/face2.JPG" alt="" width="400">
-        </div>
+    <h1>About Me</h1>
+    <div class="aboutimage">
+        <div class="border"></div>
+        <div class="border2"></div>
+        <img src="img/face2.JPG">
+    </div>
+    <p>桜井羊子<br>1994年4月24日生まれ <br> アメリカ生まれ日本育ち<br>2013年から5年間アメリカで過ごす<br>日本に帰国後何か新しい事を学びたい<br>と思いNex Seed沖縄校で<br>３ヶ月間Programmingを学ぶ<br>趣味は海外旅行とカフェ巡り</p>
+       
     </div>
 
     <!-- Skill -->
@@ -60,7 +76,6 @@
            <i class="fab fa-php fa-5x"></i>
            <i class="fab fa-wordpress-simple fa-5x"></i>
            <i class="fab fa-github fa-5x"></i>
-           <img class="jquery" src="https://img.icons8.com/ios/50/000000/jquery-filled.png">
         </div>
     </div>
 
@@ -77,31 +92,33 @@
             </div> 
             <div class="projects">
                 <a href="https://akinoboyoko.netlify.com/" target="_blank">
-                 <img class="projects-image" src="/img/gutentag.png" width="500px">
+                 <img class="projects-image" src="img/gutentag.png" width="500px">
                  </a>
             </div>
             <div class="projects">
                 <a href="https://yokospractice01.netlify.com/" target="_blank">
-                 <img class="projects-image" src="/img/italia.png" width="500px">
+                 <img class="projects-image" src="img/italia.png" width="500px">
                  </a>
             </div>
             <div class="projects">
                 <a href="https://yokosfirstproject.netlify.com/" target="_blank">
-                 <img class="projects-image" src="/img/coffeeshop.png" width="500px">
+                 <img class="projects-image" src="img/coffeeshop.png" width="500px">
                  </a>
             </div>
+            </div>
     </div>
-    
+</main>
     <!-- Contact -->
-    <div class="section" id="contact">
-        <h1 class="contactme">contact</h1>
-        <p class="contactyoko">name: Yoko Sakurai <br>email: joyceyoko@icloud.com</p>
-        </div>
+    <footer id="contact">
+        <h1>contact</h1>
+        <p>name: Yoko Sakurai <br>email: joyceyoko@icloud.com</p>
+        </footer>
 
 
    
-</main>
 
-    <script src="app.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+        <script src="app.js"></script>
 </body>
 </html>
